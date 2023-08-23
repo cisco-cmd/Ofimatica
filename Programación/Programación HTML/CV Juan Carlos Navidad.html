@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario de CV</title>
+<meta charset="utf-8" />
+<meta Juan Carlos Navidad/>
+</head>
+<body>
+    <form action="Formulario.php" method="get">
+        <h1>Rellena tu CV</h1>
+        <p>Nombre:</p> 
+            <input type="text" name="nombre" size="40">
+        <p>Apellidos:</p>
+             <input type="text" name="apellidos" size="60"/>
+        <p>Contraseña: </p>
+            <input type="text" name="contraseña" size="40">
+        <p>DNI: </p>
+            <input type="text" name="dni" size="20">
+        <p>Sexo:</p>
+            <p><input type="radio" name="hm" value="h"> Hombre</p>
+          <p>
+            <input type="radio" name="hm" value="m"> Mujer
+          </p>
+          <p>Incluir mi foto: <input type="file" name="archivo" value="image/*"></p>
+
+        <input type="radio" name="boton" value="1" checked>Suscribirme al boletín de novedades<br>
+        <p>
+          <input type="submit" value="Guardar cambios"> <input type="submit" value="Borrar los datos introducidos">
+        </p>
+
+        <h2>Formulario</h2>
+        <p><b>Datos personales:</b></p>
+        <p>Provincia:</p>
+        <div>
+            <label for="Población"></label>
+            <select name="Población">
+                <option value="TE">Teruel</option>
+                <option value="VA">Valencia</option>
+                <option value="BA">Barcelona</option>
+                <option value="M">Madrid</option>
+                <option value="" selected="selected">- selecciona -</option>
+            </select>
+        </div><br>
+        <p>Fecha de nacimiento:</p>
+        <p><input type="date" name="fecha"></p>
+        <p>Temas de interés:</p>
+        <select name="menu[]" size="5" multiple>
+            <option value="Administración de base de datos">Administración de base de datos</option>
+            <option value="Análisis y programación">Análisis y programación</option>
+            <option value="Arquitectura">Arquitectura</option>
+            <option value="Calidad">Calidad</option>
+            <option value="ERP, CRM, Business Intelligence">ERP, CRM, Business Intelligence</option>
+          </select>
+
+
+        <h2>Información sobre el producto</h2>
+        <p><b>Datos básicos</b></p>
+        <p>Nombre:</p> 
+            <input type="text" name="nombre" size="40">
+            <p>Descripción:</p> 
+                <textarea name="texto" rows="3" cols="30"></textarea>
+        <p>Foto: <input type="file" name="archivo" value="image/*"></p>
+        <input type="radio" name="boton" value="1"> Añadir contador de visitas<br>
+        
+    <p><b>Datos económicos</b></p>
+    <p>Precio: <input type="text" name="nombre" size="10">€ </p>    
+        <p>Impuestos:</p>
+        <div>
+        <label for="Impuestos"></label>
+        <select name="Impuestos">
+            <option value="TE">3%</option>
+            <option value="VA">4%</option>
+            <option value="BA">21%</option>
+            <option value="" selected="selected">4%</option>
+        </select>
+    </div><br>
+        <p>Promoción:</p>
+        <input type="radio" name="boton" value="1" checked> Ninguno<br>
+        <input type="radio" name="boton" value="1"> Transporte gratuito<br>
+        <input type="radio" name="boton" value="1"> Descuento 5%<br>
+    
+    </form>
+</body>
+</html>
